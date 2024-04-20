@@ -1,0 +1,95 @@
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #002147;
+}
+
+/* Create two unequal columns that float next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 100%;
+    text-align: center; /* Center text within the leftcolumn */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: calc(100% - 40px); /* Calculate width minus left and right margins */
+    padding: 20px;
+    margin: 0 20px; /* Equal margin on left and right */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Scalar for Images */
+img {
+    width: auto; /* Adjust the percentage to scale the image */
+    height: 100%; /* Maintain aspect ratio */
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Header/Blog Title color */
+.header h1 {
+    color: white;
+}
+
+.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Add dark mode styles for body */
+.dark-mode body {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Dark mode card styles */
+.dark-mode .card {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+/* Dark mode link color */
+.dark-mode a {
+    color: cyan;
+}
+
